@@ -127,6 +127,14 @@ p {
   font-size: .875em;
   line-height: 1.285;
 }
+
+img {
+  width: 100%;
+ }
+  
+ figure {
+  margin: 0;
+ }
   
 address {
  font-style: normal;
@@ -137,7 +145,7 @@ address {
   margin: 50px 0;
 }
 
-  }
+  
    /* -------------------- Base Header - Footer Styles -------------------- */
    
    header,
@@ -160,6 +168,15 @@ address {
      flex-flow: row wrap;
      margin: 0;
    }
+
+   header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
    .header-divider {
     background: #3a3a3a; 
     width: 100%;
@@ -230,6 +247,10 @@ address {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -279,6 +300,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -759,7 +783,7 @@ h3 {
 
   /* Hero */
   .hero-area h1 {
-    width: 60%;
+    width: 80%;
     font-size: 3.75em;
 }
 
